@@ -17,8 +17,7 @@ Crear un sitio web personalizado.
 
 ## Procedimiento
 
-Explique de forma ordenada los pasos realizados durante la práctica.
-Paso 1. 
+Explique de forma ordenada los pasos realizados durante la práctica. Paso 1.
 
 ## Resultados
 
@@ -26,7 +25,7 @@ Creacion exitosa de un sitio web.
 
 ## Figuras y tablas
 
-Agregue las figuras, tablas o capturas de pantalla necesarias para documentar el trabajo.
+![Figura 1. Imagen del sitio web personalizado](images/evidencia1.jpg)
 
 ## Reflexión final
 
