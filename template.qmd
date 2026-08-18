@@ -1,0 +1,19 @@
+---
+title: "template"
+author: "Wendy Fonseca Quirós"
+editor: visual
+---
+
+## Introducción
+
+## Objetivo
+
+## Metodología
+
+## Resultados
+
+## Interpretación
+
+## Conclusiones
+
+## Reeferencias
