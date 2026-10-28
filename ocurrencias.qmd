@@ -20,11 +20,11 @@ Posteriormente, se revisaron los registros obtenidos y se guardaron en formato R
 
 ## Resultados
 
-Se obtuvieron registros de ocurrencia de *Craugastor fitzingeri* procedentes de GBIF e iNaturalist. Los datos se organizaron en una base conjunta y se revisaron las coordenadas geográficas, las fechas, la precisión temporal, los registros con coordenadas oscurecidas, los registros repetidos y el resultado de las pruebas de CoordinateCleaner. Además, se seleccionaron las ocurrencias correspondientes a Costa Rica y se guardaron las bases depuradas.
+La descarga inicial permitió obtener 5.608 registros de GBIF y 3.123 de iNaturalist. Después de integrar las fuentes y aplicar los filtros temporales y de calidad geográfica, se obtuvo una base de 4.591 registros. Mediante CoordinateCleaner se identificaron 23 registros con posibles problemas geográficos y 1.627 con coordenadas repetidas.
 
-Como resultado del procesamiento se generó un mapa de las ocurrencias de la especie en Costa Rica, diferenciadas según la fuente de información (Figura 1). También se obtuvieron dos bases finales: una para análisis por cantón y otra para análisis espaciales.
+Posteriormente, se seleccionaron 3.099 ocurrencias correspondientes a Costa Rica: 487 de GBIF y 2.612 de iNaturalist. Esta base se utilizó para el análisis por cantón, mientras que para los análisis espaciales se conservaron 2.996 registros, al excluir las observaciones con coordenadas oscurecidas.
 
-El mapa permite visualizar la ubicación de las ocurrencias y constituye un recurso para explorar los patrones de distribución geográfica de la especie.
+Finalmente, se generó un mapa de la distribución de las ocurrencias de *Craugastor fitzingeri* en Costa Rica según la fuente de información (Figura 1).
 
 ![Figura 1. Distribución de los registros de ocurrencia de *Craugastor fitzingeri* en Costa Rica según la fuente de información (GBIF e iNaturalist).](images/craugastor_fitzingeri_occurrences.jpg)
 

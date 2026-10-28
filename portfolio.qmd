@@ -41,7 +41,15 @@ En esta práctica se descargará y limpiara un dataset de ocurrencias de la espe
 
 En esta prácticase utilizaron registros de mortalidad humana obtenidos de lápidas de los cementerios de Heredia y San José. Estos datos permitieron construir tablas de vida con paquetes tidyverse y gt para procesar los datos y elaborar tablas.
 
-[Ver práctica →](tablasvida.qmd)
+[Ver práctica →](tablas.qmd)
+:::
+
+::: portfolio-item
+### 📚 Mapeo de áreas administrativas y zonas de vida
+
+En esta práctica se utilizaron registros de ocurrencia de *Craugastor fitzingeri* para realizar análisis espaciales en RStudio, mediante los paquetes sf, tmap, tidyverse y janitor, y elaborar mapas y gráficos que describieran su distribución geográfica y temporal en Costa Rica.
+
+[Ver práctica →](mapeo.qmd)
 :::
 
 ------------------------------------------------------------------------

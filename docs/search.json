@@ -165,7 +165,7 @@
     "href": "ocurrencias.html#resultados",
     "title": "Descarga de ocurrencias con RStudio desde iNaturalist y GBIF",
     "section": "Resultados",
-    "text": "Resultados\nSe obtuvieron registros de ocurrencia de Craugastor fitzingeri procedentes de GBIF e iNaturalist. Los datos se organizaron en una base conjunta y se revisaron las coordenadas geográficas, las fechas, la precisión temporal, los registros con coordenadas oscurecidas, los registros repetidos y el resultado de las pruebas de CoordinateCleaner. Además, se seleccionaron las ocurrencias correspondientes a Costa Rica y se guardaron las bases depuradas.\nComo resultado del procesamiento se generó un mapa de las ocurrencias de la especie en Costa Rica, diferenciadas según la fuente de información (Figura 1). También se obtuvieron dos bases finales: una para análisis por cantón y otra para análisis espaciales.\nEl mapa permite visualizar la ubicación de las ocurrencias y constituye un recurso para explorar los patrones de distribución geográfica de la especie.\n\n\n\nFigura 1. Distribución de los registros de ocurrencia de Craugastor fitzingeri en Costa Rica según la fuente de información (GBIF e iNaturalist)."
+    "text": "Resultados\nLa descarga inicial permitió obtener 5.608 registros de GBIF y 3.123 de iNaturalist. Después de integrar las fuentes y aplicar los filtros temporales y de calidad geográfica, se obtuvo una base de 4.591 registros. Mediante CoordinateCleaner se identificaron 23 registros con posibles problemas geográficos y 1.627 con coordenadas repetidas.\nPosteriormente, se seleccionaron 3.099 ocurrencias correspondientes a Costa Rica: 487 de GBIF y 2.612 de iNaturalist. Esta base se utilizó para el análisis por cantón, mientras que para los análisis espaciales se conservaron 2.996 registros, al excluir las observaciones con coordenadas oscurecidas.\nFinalmente, se generó un mapa de la distribución de las ocurrencias de Craugastor fitzingeri en Costa Rica según la fuente de información (Figura 1).\n\n\n\nFigura 1. Distribución de los registros de ocurrencia de Craugastor fitzingeri en Costa Rica según la fuente de información (GBIF e iNaturalist)."
   },
   {
     "objectID": "ocurrencias.html#conclusiones",
@@ -173,6 +173,41 @@
     "title": "Descarga de ocurrencias con RStudio desde iNaturalist y GBIF",
     "section": "Conclusiones",
     "text": "Conclusiones\nAprendí a descargar registros de ocurrencia desde GBIF e iNaturalist utilizando R, integrar ambas fuentes y revisar la calidad de las coordenadas geográficas para preparar los datos para análisis espaciales.\nEsta herramienta puede utilizarse para estudiar la distribución geográfica de otras especies, identificar áreas con registros de biodiversidad y generar información útil para investigaciones ecológicas y proyectos de conservación."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Inicio",
+    "section": "",
+    "text": "Escuela de Ciencias Biológicas\nUniversidad Nacional, Costa Rica\nVer mi perfil\nExplorar mi portafolio"
+  },
+  {
+    "objectID": "index.html#estudiante-de-bachillerato-en-biología-tropical",
+    "href": "index.html#estudiante-de-bachillerato-en-biología-tropical",
+    "title": "Inicio",
+    "section": "",
+    "text": "Escuela de Ciencias Biológicas\nUniversidad Nacional, Costa Rica\nVer mi perfil\nExplorar mi portafolio"
+  },
+  {
+    "objectID": "index.html#bienvenidoa",
+    "href": "index.html#bienvenidoa",
+    "title": "Inicio",
+    "section": "Bienvenido(a)",
+    "text": "Bienvenido(a)\nEste sitio web constituye mi portafolio digital académico, donde documentaré las prácticas de laboratorio, proyectos, análisis y productos desarrollados durante el curso Ecología de Poblaciones y Comunidades.\nEste portafolio utiliza herramientas de ciencia reproducible como R, Quarto, Git y GitHub, permitiendo organizar y compartir mi trabajo de manera profesional."
+  },
+  {
+    "objectID": "index.html#contenido-del-sitio",
+    "href": "index.html#contenido-del-sitio",
+    "title": "Inicio",
+    "section": "Contenido del sitio",
+    "text": "Contenido del sitio\n\n\nPerfil\nInformación personal, intereses académicos y experiencia.\nIr al perfil →\n\n\nPortafolio\nRegistro de las prácticas, proyectos y productos desarrollados durante el semestre.\nVer el portafolio →\n\n\n\n\nLa ciencia solo adquiere valor cuando puede ser comunicada y reproducida."
+  },
+  {
+    "objectID": "index.html#herramientas-y-afiliación",
+    "href": "index.html#herramientas-y-afiliación",
+    "title": "Inicio",
+    "section": "Herramientas y afiliación",
+    "text": "Herramientas y afiliación\nEste portafolio fue desarrollado con herramientas de ciencia reproducible.\n\n\n\n\n\nÚltima actualización: 28 de Octubre 2026"
   },
   {
     "objectID": "about.html",
@@ -217,39 +252,46 @@
     "text": "Formación académica\nUniversidad Nacional (UNA)\nBachillerato en Biología\n2022 – Presente"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Inicio",
+    "objectID": "mapeo.html",
+    "href": "mapeo.html",
+    "title": "Mapeo de áreas administrativas y zonas de vida",
     "section": "",
-    "text": "Escuela de Ciencias Biológicas\nUniversidad Nacional, Costa Rica\nVer mi perfil\nExplorar mi portafolio"
+    "text": "Los registros de ocurrencia adquieren mayor valor ecológico cuando se relacionan con unidades geográficas que permiten describir dónde se concentran las observaciones de una especie. Las divisiones administrativas (provincias y cantones) facilitan resumir y comunicar la distribución de los registros, mientras que las regiones biogeográficas de Savage permiten relacionarla con patrones ambientales y herpetofaunísticos del país. Esta práctica permitió integrar los registros depurados de Craugastor fitzingeri con capas espaciales de Costa Rica para cuantificar y visualizar su distribución geográfica, temporal y latitudinal."
   },
   {
-    "objectID": "index.html#estudiante-de-bachillerato-en-biología-tropical",
-    "href": "index.html#estudiante-de-bachillerato-en-biología-tropical",
-    "title": "Inicio",
+    "objectID": "mapeo.html#introducción",
+    "href": "mapeo.html#introducción",
+    "title": "Mapeo de áreas administrativas y zonas de vida",
     "section": "",
-    "text": "Escuela de Ciencias Biológicas\nUniversidad Nacional, Costa Rica\nVer mi perfil\nExplorar mi portafolio"
+    "text": "Los registros de ocurrencia adquieren mayor valor ecológico cuando se relacionan con unidades geográficas que permiten describir dónde se concentran las observaciones de una especie. Las divisiones administrativas (provincias y cantones) facilitan resumir y comunicar la distribución de los registros, mientras que las regiones biogeográficas de Savage permiten relacionarla con patrones ambientales y herpetofaunísticos del país. Esta práctica permitió integrar los registros depurados de Craugastor fitzingeri con capas espaciales de Costa Rica para cuantificar y visualizar su distribución geográfica, temporal y latitudinal."
   },
   {
-    "objectID": "index.html#bienvenidoa",
-    "href": "index.html#bienvenidoa",
-    "title": "Inicio",
-    "section": "Bienvenido(a)",
-    "text": "Bienvenido(a)\nEste sitio web constituye mi portafolio digital académico, donde documentaré las prácticas de laboratorio, proyectos, análisis y productos desarrollados durante el curso Ecología de Poblaciones y Comunidades.\nEste portafolio utiliza herramientas de ciencia reproducible como R, Quarto, Git y GitHub, permitiendo organizar y compartir mi trabajo de manera profesional."
+    "objectID": "mapeo.html#objetivo",
+    "href": "mapeo.html#objetivo",
+    "title": "Mapeo de áreas administrativas y zonas de vida",
+    "section": "Objetivo",
+    "text": "Objetivo\nAsignar los registros de ocurrencia de Craugastor fitzingeri a provincias, cantones y regiones de Savage mediante análisis espacial en R, y elaborar mapas y gráficos que describan su distribución geográfica y temporal."
   },
   {
-    "objectID": "index.html#contenido-del-sitio",
-    "href": "index.html#contenido-del-sitio",
-    "title": "Inicio",
-    "section": "Contenido del sitio",
-    "text": "Contenido del sitio\n\n\nPerfil\nInformación personal, intereses académicos y experiencia.\nIr al perfil →\n\n\nPortafolio\nRegistro de las prácticas, proyectos y productos desarrollados durante el semestre.\nVer el portafolio →\n\n\n\n\nLa ciencia solo adquiere valor cuando puede ser comunicada y reproducida."
+    "objectID": "mapeo.html#metodología",
+    "href": "mapeo.html#metodología",
+    "title": "Mapeo de áreas administrativas y zonas de vida",
+    "section": "Metodología",
+    "text": "Metodología\nLa práctica se realizó en RStudio con los paquetes sf, tmap, tidyverse y janitor. Se leyeron las capas de Costa Rica, cantones, provincias y regiones de Savage, se corrigieron sus geometrías, se transformaron a WGS84 (EPSG:4326) y se estandarizaron los nombres de sus columnas. Los registros depurados de la práctica anterior (occ_canton) se convirtieron en objeto espacial y, con st_join(), se asignó a cada uno su cantón, provincia y región de Savage. Los registros costeros que quedaron fuera de los polígonos de Savage se asignaron a la región más cercana con st_nearest_feature. Se contaron las observaciones por unidad y se elaboraron con tmap mapas coropléticos por provincia, cantón y región de Savage, con los registros superpuestos como puntos. Además, con ggplot2 se elaboraron gráficos de los cantones con más observaciones, la distribución temporal, la variación de los límites latitudinales y longitudinales por año, la densidad de observaciones por coordenadas y la primera observación por cantón. Todas las figuras se guardaron en JPG a 300 dpi."
   },
   {
-    "objectID": "index.html#herramientas-y-afiliación",
-    "href": "index.html#herramientas-y-afiliación",
-    "title": "Inicio",
-    "section": "Herramientas y afiliación",
-    "text": "Herramientas y afiliación\nEste portafolio fue desarrollado con herramientas de ciencia reproducible.\n\n\n\n\n\nÚltima actualización: 28 de Octubre 2026"
+    "objectID": "mapeo.html#resultados",
+    "href": "mapeo.html#resultados",
+    "title": "Mapeo de áreas administrativas y zonas de vida",
+    "section": "Resultados",
+    "text": "Resultados\nLos registros de Craugastor fitzingeri se asignaron a las regiones de Savage de Costa Rica y se contó el número de observaciones en cada una. El mapa muestra en qué regiones se concentran las observaciones de la especie y en cuáles no hay registros, que se indican como «No registrado». Esta representación permite relacionar la ubicación de los registros con las regiones biogeográficas del país y explorar los patrones de distribución geográfica de la especie.\n\n\n\nFigura 1. Número de observaciones de Craugastor fitzingeri por región de Savage en Costa Rica. Los puntos negros representan los registros."
+  },
+  {
+    "objectID": "mapeo.html#conclusiones",
+    "href": "mapeo.html#conclusiones",
+    "title": "Mapeo de áreas administrativas y zonas de vida",
+    "section": "Conclusiones",
+    "text": "Conclusiones\nAprendí a relacionar registros de ocurrencia con regiones biogeográficas mediante uniones espaciales (st_join()), a contar observaciones por región y a representarlas en un mapa coroplético con tmap.\nEsto puede aplicarse a otras especies para identificar regiones con vacíos de información, priorizar sitios de muestreo y apoyar estudios de conservación y de manejo de áreas protegidas."
   },
   {
     "objectID": "portfolio.html",
@@ -263,7 +305,7 @@
     "href": "portfolio.html#prácticas-de-laboratorio",
     "title": "Portafolio académico",
     "section": "Prácticas de laboratorio",
-    "text": "Prácticas de laboratorio\n\n📚 Gestión de referencias bibliográficas con Zotero\nEn esta práctica se documentará la creación de una biblioteca bibliográfica utilizando Zotero y su integración con Microsoft Word.\nVer práctica →\n\n\n📚 Manejo de datos con Tidyverse\nEn esta práctica se documentará la importacion y el manejo de datos con el paquete Tidyverse en RStudio.\nVer práctica →\n\n\n📚 Descarga de ocurrencias con RStudio desde iNaturalist y GBIF\nEn esta práctica se descargará y limpiara un dataset de ocurrencias de la especie Craugastor fitzingeri con los paquetes de rgbif y rinat.\nVer práctica →\n\n\n📚 Generación de tablas de vida\nEn esta prácticase utilizaron registros de mortalidad humana obtenidos de lápidas de los cementerios de Heredia y San José. Estos datos permitieron construir tablas de vida con paquetes tidyverse y gt para procesar los datos y elaborar tablas.\nVer práctica →"
+    "text": "Prácticas de laboratorio\n\n📚 Gestión de referencias bibliográficas con Zotero\nEn esta práctica se documentará la creación de una biblioteca bibliográfica utilizando Zotero y su integración con Microsoft Word.\nVer práctica →\n\n\n📚 Manejo de datos con Tidyverse\nEn esta práctica se documentará la importacion y el manejo de datos con el paquete Tidyverse en RStudio.\nVer práctica →\n\n\n📚 Descarga de ocurrencias con RStudio desde iNaturalist y GBIF\nEn esta práctica se descargará y limpiara un dataset de ocurrencias de la especie Craugastor fitzingeri con los paquetes de rgbif y rinat.\nVer práctica →\n\n\n📚 Generación de tablas de vida\nEn esta prácticase utilizaron registros de mortalidad humana obtenidos de lápidas de los cementerios de Heredia y San José. Estos datos permitieron construir tablas de vida con paquetes tidyverse y gt para procesar los datos y elaborar tablas.\nVer práctica →\n\n\n📚 Mapeo de áreas administrativas y zonas de vida\nEn esta práctica se utilizaron registros de ocurrencia de Craugastor fitzingeri para realizar análisis espaciales en RStudio, mediante los paquetes sf, tmap, tidyverse y janitor, y elaborar mapas y gráficos que describieran su distribución geográfica y temporal en Costa Rica.\nVer práctica →"
   },
   {
     "objectID": "portfolio.html#objetivo-del-portafolio",
@@ -273,46 +315,46 @@
     "text": "Objetivo del portafolio\nMás que una colección de tareas, este portafolio constituye un registro organizado del aprendizaje, donde se documentan procedimientos, resultados y reflexiones desarrolladas a lo largo del curso.\nAl finalizar el semestre este sitio mostrará la evolución de mis competencias en análisis de datos ecológicos, programación en R y comunicación científica."
   },
   {
+    "objectID": "tablas.html",
+    "href": "tablas.html",
+    "title": "template",
+    "section": "",
+    "text": "Las tablas de vida son herramientas utilizadas en la ecología de poblaciones para analizar la supervivencia y la mortalidad a diferentes edades. Permiten identificar patrones de supervivencia y compararlos con tres modelos teóricos: tipo I, caracterizado por una mortalidad elevada en edades avanzadas; tipo II, con una mortalidad relativamente constante durante la vida; y tipo III, con una mortalidad alta en las primeras etapas de vida. En esta práctica se utilizaron registros de mortalidad humana obtenidos de lápidas de los cementerios de Heredia y San José. Estos datos permitieron construir tablas de vida, analizar la distribución de las edades de muerte y comparar los patrones de supervivencia entre ambas localidades."
+  },
+  {
+    "objectID": "tablas.html#introducción",
+    "href": "tablas.html#introducción",
+    "title": "template",
+    "section": "",
+    "text": "Las tablas de vida son herramientas utilizadas en la ecología de poblaciones para analizar la supervivencia y la mortalidad a diferentes edades. Permiten identificar patrones de supervivencia y compararlos con tres modelos teóricos: tipo I, caracterizado por una mortalidad elevada en edades avanzadas; tipo II, con una mortalidad relativamente constante durante la vida; y tipo III, con una mortalidad alta en las primeras etapas de vida. En esta práctica se utilizaron registros de mortalidad humana obtenidos de lápidas de los cementerios de Heredia y San José. Estos datos permitieron construir tablas de vida, analizar la distribución de las edades de muerte y comparar los patrones de supervivencia entre ambas localidades."
+  },
+  {
     "objectID": "tablas.html#objetivo",
     "href": "tablas.html#objetivo",
     "title": "template",
     "section": "Objetivo",
-    "text": "Objetivo"
+    "text": "Objetivo\nConstruir y analizar tablas de vida a partir de registros de mortalidad humana de los cementerios de Heredia y San José, con el propósito de caracterizar los patrones de supervivencia, compararlos con los modelos teóricos de curvas de supervivencia y evaluar las diferencias en las edades de muerte entre ambas localidades."
   },
   {
     "objectID": "tablas.html#metodología",
     "href": "tablas.html#metodología",
     "title": "template",
     "section": "Metodología",
-    "text": "Metodología"
+    "text": "Metodología\nLa práctica se desarrolló en RStudio mediante el lenguaje R y los paquetes tidyverse y gt. Se importaron y combinaron los registros de mortalidad de los cementerios de Heredia y San José, identificando su procedencia. Se calculó la edad de muerte, se revisaron y excluyeron temporalmente los valores inconsistentes y se agruparon las edades en 21 intervalos. Posteriormente, se calcularon las frecuencias de mortalidad por edad, localidad y sexo, y se elaboraron tablas de vida con indicadores de supervivencia y mortalidad. Finalmente, se exportaron los resultados a archivos CSV y DOCX, y se realizaron gráficos y pruebas estadísticas para comparar las curvas de supervivencia entre localidades y sexos."
   },
   {
     "objectID": "tablas.html#resultados",
     "href": "tablas.html#resultados",
     "title": "template",
     "section": "Resultados",
-    "text": "Resultados"
-  },
-  {
-    "objectID": "tablas.html#interpretación",
-    "href": "tablas.html#interpretación",
-    "title": "template",
-    "section": "Interpretación",
-    "text": "Interpretación"
+    "text": "Resultados\nSe analizaron inicialmente 1403 registros de mortalidad correspondientes al cementerio de Heredia y 1360 al Cementerio General de San José, para un total de 2763 registros antes de la revisión y exclusión de edades inválidas. En ambas localidades se registró una mayor cantidad de defunciones masculinas que femeninas. La tabla de vida permitió observar que la mortalidad específica por edad se mantuvo relativamente baja durante la niñez y la adultez temprana, mientras que aumentó a partir de los 46–50 años, con un incremento más marcado en las edades avanzadas. Por su parte, la proporción de sobrevivientes disminuyó progresivamente hasta la mediana edad y descendió con mayor rapidez durante la vejez. Los resultados fueron similares entre las dos localidades. En el intervalo de 96 años o más, la proporción de sobrevivientes fue de 0,045 en Heredia y 0,042 en San José. Este comportamiento se asemeja al patrón teórico de supervivencia tipo I, en el cual la mayoría de los individuos sobrevive hasta edades avanzadas y la mortalidad aumenta durante la vejez.\nLas curvas de supervivencia (figura 1) de ambas localidades mostraron un patrón similar al tipo I, caracterizado por una supervivencia elevada durante gran parte de la vida y una disminución más pronunciada en edades avanzadas. En ambos cementerios, la proporción de sobrevivientes a los 61–65 años fue de aproximadamente 0,69, mientras que en el intervalo de 96 años o más disminuyó a 0,045 en Heredia y 0,042 en San José. Estos resultados indican que la supervivencia fue similar entre ambas localidades.\n\n\n\nFigura 1. Comparación de las curvas de supervivencia teóricas de los tipos I, II y III con las curvas observadas en los cementerios de Heredia y San José."
   },
   {
     "objectID": "tablas.html#conclusiones",
     "href": "tablas.html#conclusiones",
     "title": "template",
     "section": "Conclusiones",
-    "text": "Conclusiones"
-  },
-  {
-    "objectID": "tablas.html#reeferencias",
-    "href": "tablas.html#reeferencias",
-    "title": "template",
-    "section": "Reeferencias",
-    "text": "Reeferencias"
+    "text": "Conclusiones\nLa práctica permitió aprender a construir tablas de vida a partir de registros de mortalidad y comprender cómo los indicadores de supervivencia y mortalidad cambian entre los intervalos de edad. También permitió reconocer la utilidad de estas herramientas para identificar patrones demográficos y compararlos entre localidades. Este conocimiento puede aplicarse en estudios de ecología de poblaciones para analizar la supervivencia de anfibios, reptiles y otros organismos, comparar la mortalidad entre poblaciones y comprender cómo varía la supervivencia a lo largo del ciclo de vida."
   },
   {
     "objectID": "tidy.html",
@@ -347,7 +389,7 @@
     "href": "tidy.html#resultados",
     "title": "Manejo de datos con Tidyverse",
     "section": "Resultados",
-    "text": "Resultados\nLa transformación de los datos meteorológicos permitió organizar la información por fecha, estación meteorológica y variable climática. Se separaron las temperaturas mínimas y máximas y se convirtieron las variables correspondientes a valores numéricos. A partir de estos datos, se elaboró un gráfico para comparar las temperaturas medias mínimas y máximas entre las cinco estaciones meteorológicas durante marzo del periodo 2010–2020. Además, se generó una tabla con los promedios de precipitación, nieve y temperatura por estación. En el ejercicio de ungulados de Angola, los datos se organizaron para separar la información taxonómica de los registros de observación. También se elaboró un gráfico que representa la cantidad de observaciones registradas para cada especie.\nSe encontro un total de 26 especies. La especie mas abundate fue Hippopotamus amphibius con 28 observaciones. La figura 1 permitió comparar el número de observaciones entre las diferentes especies de ungulados registradas. Esta representación facilita identificar diferencias en la cantidad de registros por especie y demuestra la utilidad de organizar los datos para resumir y visualizar información biológica.\n\n\n\nFigura 1. Número de observaciones registradas por especie de ungulado en Angola."
+    "text": "Resultados\nEn el ejercicio de datos meteorológicos, la base de datos original contenía 165 filas y 41 columnas. Mediante la transformación de los datos, la información se organizó por fecha, estación meteorológica y variable climática. Además, se separaron las temperaturas mínimas y máximas y se convirtieron las variables correspondientes a valores numéricos. Con estos datos, se elaboró un gráfico para comparar las temperaturas medias mínimas y máximas de cinco estaciones meteorológicas durante el mes de marzo del periodo 2010–2020. También se generó una tabla con los promedios de precipitación, nieve y temperatura para cada estación.\nEn el ejercicio de ungulados de Angola, se analizaron 186 observaciones correspondientes a 26 especies. Los datos se organizaron para facilitar la identificación de las especies y la contabilización de sus registros. La especie con mayor número de observaciones fue Hippopotamus amphibius, con 26 registros, seguida de Kobus leche, con 21, y Connochaetes taurinus, con 15. En cuarto lugar se encontró Equus quagga, con 14 observaciones, mientras que Syncerus caffer presentó 13 registros.\n\n\n\nFigura 1. Número de observaciones registradas por especie de ungulado en Angola."
   },
   {
     "objectID": "tidy.html#conclusiones",
