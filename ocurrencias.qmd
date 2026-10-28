@@ -1,0 +1,35 @@
+---
+title: "Descarga de ocurrencias con RStudio desde iNaturalist y GBIF"
+author: "Wendy Fonseca Quirós"
+editor: visual
+---
+
+## Introducción
+
+Los registros de ocurrencia permiten conocer la distribución geográfica de las especies a partir de observaciones realizadas en diferentes lugares y fechas. Las plataformas GBIF e iNaturalist ofrecen información que puede utilizarse en estudios ecológicos y de biodiversidad. Sin embargo, estos registros deben revisarse y depurarse para identificar datos incompletos, coordenadas incorrectas y observaciones duplicadas. Por ello, la práctica permitió conocer el proceso de descarga, organización y limpieza de registros de ocurrencia de *Craugastor fitzingeri* para su posterior utilización en análisis espaciales.
+
+## Objetivo
+
+Descargar y organizar registros de ocurrencia de *Craugastor fitzingeri* provenientes de GBIF e iNaturalist mediante R, y aplicar procedimientos básicos de revisión y limpieza de los datos geográficos para preparar bases de datos útiles para análisis posteriores.
+
+## Metodología
+
+La práctica se realizó en RStudio utilizando los scripts proporcionados en el curso. Primero, se configuraron las credenciales de GBIF mediante el archivo gbif_credentials.R. Después, se definió la especie de estudio, *Craugastor fitzingeri*, y se descargaron los registros de ocurrencia de GBIF mediante el paquete rgbif y de iNaturalist mediante rinat.
+
+Posteriormente, se revisaron los registros obtenidos y se guardaron en formato RDS. Para integrar y depurar los datos se utilizaron los paquetes tidyverse, CoordinateCleaner y sf, con los que se estandarizaron las coordenadas y las fechas, se identificaron posibles errores geográficos y se seleccionaron los registros correspondientes a Costa Rica. Finalmente, se prepararon bases de datos para análisis espaciales y por cantón, y se generaron mapas mediante el paquete tmap.
+
+## Resultados
+
+Se obtuvieron registros de ocurrencia de *Craugastor fitzingeri* procedentes de GBIF e iNaturalist. Los datos se organizaron en una base conjunta y se revisaron las coordenadas geográficas, las fechas, la precisión temporal, los registros con coordenadas oscurecidas, los registros repetidos y el resultado de las pruebas de CoordinateCleaner. Además, se seleccionaron las ocurrencias correspondientes a Costa Rica y se guardaron las bases depuradas.
+
+Como resultado del procesamiento se generó un mapa de las ocurrencias de la especie en Costa Rica, diferenciadas según la fuente de información (Figura 1). También se obtuvieron dos bases finales: una para análisis por cantón y otra para análisis espaciales.
+
+El mapa permite visualizar la ubicación de las ocurrencias y constituye un recurso para explorar los patrones de distribución geográfica de la especie.
+
+![Figura 1. Distribución de los registros de ocurrencia de *Craugastor fitzingeri* en Costa Rica según la fuente de información (GBIF e iNaturalist).](images/craugastor_fitzingeri_occurrences.jpg)
+
+## Conclusiones
+
+Aprendí a descargar registros de ocurrencia desde GBIF e iNaturalist utilizando R, integrar ambas fuentes y revisar la calidad de las coordenadas geográficas para preparar los datos para análisis espaciales.
+
+Esta herramienta puede utilizarse para estudiar la distribución geográfica de otras especies, identificar áreas con registros de biodiversidad y generar información útil para investigaciones ecológicas y proyectos de conservación.

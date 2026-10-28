@@ -81,7 +81,7 @@
     "href": "index.html#herramientas-y-afiliación",
     "title": "Inicio",
     "section": "Herramientas y afiliación",
-    "text": "Herramientas y afiliación\nEste portafolio fue desarrollado con herramientas de ciencia reproducible.\n\n\n\n\n\nÚltima actualización: 4 de Agosto 2026"
+    "text": "Herramientas y afiliación\nEste portafolio fue desarrollado con herramientas de ciencia reproducible.\n\n\n\n\n\nÚltima actualización: 28 de Octubre 2026"
   },
   {
     "objectID": "about.html",
@@ -137,7 +137,7 @@
     "href": "portfolio.html#prácticas-de-laboratorio",
     "title": "Portafolio académico",
     "section": "Prácticas de laboratorio",
-    "text": "Prácticas de laboratorio\n\n📄 Práctica de ejemplo\nIntroducción al uso del portafolio digital académico y documentación de una práctica mediante Quarto.\nVer práctica →\n\n\n📚 Gestión de referencias bibliográficas con Zotero\nEn esta práctica se documentará la creación de una biblioteca bibliográfica utilizando Zotero y su integración con Microsoft Word.\nVer práctica →"
+    "text": "Prácticas de laboratorio\n\n📚 Gestión de referencias bibliográficas con Zotero\nEn esta práctica se documentará la creación de una biblioteca bibliográfica utilizando Zotero y su integración con Microsoft Word.\nVer práctica →\n\n\n📚 Manejo de datos con Tidyverse\nEn esta práctica se documentará la importacion y el manejo de datos con el paquete Tidyverse en RStudio.\nVer práctica →\n\n\n📚 Descarga de ocurrencias con RStudio desde iNaturalist y GBIF\nEn esta práctica se descargará y limpiara un dataset de ocurrencias de la especie Craugastor fitzingeri con los paquetes de rgbif y rinat.\nVer práctica →\n\n\n📚 Generación de tablas de vida\nEn esta prácticase utilizaron registros de mortalidad humana obtenidos de lápidas de los cementerios de Heredia y San José. Estos datos permitieron construir tablas de vida con paquetes tidyverse y gt para procesar los datos y elaborar tablas.\nVer práctica →"
   },
   {
     "objectID": "portfolio.html#objetivo-del-portafolio",
@@ -229,5 +229,145 @@
     "title": "template",
     "section": "Reeferencias",
     "text": "Reeferencias"
+  },
+  {
+    "objectID": "tidy.html",
+    "href": "tidy.html",
+    "title": "Manejo de datos con Tidyverse",
+    "section": "",
+    "text": "El ordenamiento de datos es un paso importante en el análisis de información biológica y ambiental, ya que permite organizar las observaciones y variables para facilitar su procesamiento e interpretación. El concepto de tidy data consiste en estructurar los datos de manera que cada variable corresponda a una columna, cada observación a una fila y cada tipo de unidad observacional a una tabla. En esta práctica se trabajó con bases de datos meteorológicos y registros de ungulados de Angola. Se utilizaron funciones de R para reorganizar columnas, separar y unir variables, modificar formatos de fecha, convertir datos a valores numéricos y separar la información taxonómica de las observaciones. Además, se generaron tablas resumen y gráficos para explorar los datos procesados."
+  },
+  {
+    "objectID": "tidy.html#introducción",
+    "href": "tidy.html#introducción",
+    "title": "Manejo de datos con Tidyverse",
+    "section": "",
+    "text": "El ordenamiento de datos es un paso importante en el análisis de información biológica y ambiental, ya que permite organizar las observaciones y variables para facilitar su procesamiento e interpretación. El concepto de tidy data consiste en estructurar los datos de manera que cada variable corresponda a una columna, cada observación a una fila y cada tipo de unidad observacional a una tabla. En esta práctica se trabajó con bases de datos meteorológicos y registros de ungulados de Angola. Se utilizaron funciones de R para reorganizar columnas, separar y unir variables, modificar formatos de fecha, convertir datos a valores numéricos y separar la información taxonómica de las observaciones. Además, se generaron tablas resumen y gráficos para explorar los datos procesados."
+  },
+  {
+    "objectID": "tidy.html#objetivo",
+    "href": "tidy.html#objetivo",
+    "title": "Manejo de datos con Tidyverse",
+    "section": "Objetivo",
+    "text": "Objetivo\nAplicar herramientas del lenguaje R para organizar y transformar bases de datos en formato tidy data, facilitando su procesamiento, análisis y representación gráfica."
+  },
+  {
+    "objectID": "tidy.html#metodología",
+    "href": "tidy.html#metodología",
+    "title": "Manejo de datos con Tidyverse",
+    "section": "Metodología",
+    "text": "Metodología\nLa práctica se desarrolló en el programa RStudio, utilizando el lenguaje R y paquetes como tidyverse, gt y funciones para la manipulación y visualización de datos. Primero, se trabajó con una base de datos meteorológicos que contenía información de cinco estaciones, incluyendo coordenadas, elevación, año, precipitación, nieve y temperaturas. Mediante funciones como pivot_longer() y pivot_wider(), se reorganizaron los datos para obtener una estructura en la que las observaciones y las variables estuvieran correctamente distribuidas. También se unieron las variables de año, mes y día para formar fechas, se separaron las temperaturas mínimas y máximas y se ajustaron los nombres y tipos de las columnas. Posteriormente, se calcularon valores promedio de variables climáticas por estación y se generó un gráfico para comparar las temperaturas mínimas y máximas. También se creó una tabla resumen con las condiciones climáticas medias registradas durante marzo entre 2010 y 2020. En el segundo ejercicio, se utilizó una base de datos de ungulados de Angola. Se combinaron las variables de año, mes y día para crear fechas, se unieron los nombres de género y especie y se separó la información taxonómica en categorías como clase, orden y familia. Finalmente, se organizaron las observaciones y la taxonomía en tablas independientes, se guardaron los datos procesados y se elaboró un gráfico del número de observaciones por especie."
+  },
+  {
+    "objectID": "tidy.html#resultados",
+    "href": "tidy.html#resultados",
+    "title": "Manejo de datos con Tidyverse",
+    "section": "Resultados",
+    "text": "Resultados\nLa transformación de los datos meteorológicos permitió organizar la información por fecha, estación meteorológica y variable climática. Se separaron las temperaturas mínimas y máximas y se convirtieron las variables correspondientes a valores numéricos. A partir de estos datos, se elaboró un gráfico para comparar las temperaturas medias mínimas y máximas entre las cinco estaciones meteorológicas durante marzo del periodo 2010–2020. Además, se generó una tabla con los promedios de precipitación, nieve y temperatura por estación. En el ejercicio de ungulados de Angola, los datos se organizaron para separar la información taxonómica de los registros de observación. También se elaboró un gráfico que representa la cantidad de observaciones registradas para cada especie.\nSe encontro un total de 26 especies. La especie mas abundate fue Hippopotamus amphibius con 28 observaciones. La figura 1 permitió comparar el número de observaciones entre las diferentes especies de ungulados registradas. Esta representación facilita identificar diferencias en la cantidad de registros por especie y demuestra la utilidad de organizar los datos para resumir y visualizar información biológica.\n\n\n\nFigura 1. Número de observaciones registradas por especie de ungulado en Angola."
+  },
+  {
+    "objectID": "tidy.html#conclusiones",
+    "href": "tidy.html#conclusiones",
+    "title": "Manejo de datos con Tidyverse",
+    "section": "Conclusiones",
+    "text": "Conclusiones\nLa práctica permitió comprender la importancia de organizar adecuadamente las bases de datos antes de realizar análisis estadísticos o generar gráficos. Estas herramientas pueden aplicarse en investigaciones biológicas, por ejemplo, al organizar registros de especies, observaciones de campo, variables ambientales o datos de monitoreo de anfibios y reptiles. Una de las principales dificultades puede ser comprender cómo reorganizar los datos sin perder la relación entre las variables."
+  },
+  {
+    "objectID": "ocurrencias.html#objetivo",
+    "href": "ocurrencias.html#objetivo",
+    "title": "Descarga de ocurrencias con RStudio desde iNaturalist y GBIF",
+    "section": "Objetivo",
+    "text": "Objetivo\nDescargar y organizar registros de ocurrencia de Craugastor fitzingeri provenientes de GBIF e iNaturalist mediante R, y aplicar procedimientos básicos de revisión y limpieza de los datos geográficos para preparar bases de datos útiles para análisis posteriores."
+  },
+  {
+    "objectID": "ocurrencias.html#metodología",
+    "href": "ocurrencias.html#metodología",
+    "title": "Descarga de ocurrencias con RStudio desde iNaturalist y GBIF",
+    "section": "Metodología",
+    "text": "Metodología\nLa práctica se realizó en RStudio utilizando los scripts proporcionados en el curso. Primero, se configuraron las credenciales de GBIF mediante el archivo gbif_credentials.R. Después, se definió la especie de estudio, Craugastor fitzingeri, y se descargaron los registros de ocurrencia de GBIF mediante el paquete rgbif y de iNaturalist mediante rinat.\nPosteriormente, se revisaron los registros obtenidos y se guardaron en formato RDS. Para integrar y depurar los datos se utilizaron los paquetes tidyverse, CoordinateCleaner y sf, con los que se estandarizaron las coordenadas y las fechas, se identificaron posibles errores geográficos y se seleccionaron los registros correspondientes a Costa Rica. Finalmente, se prepararon bases de datos para análisis espaciales y por cantón, y se generaron mapas mediante el paquete tmap."
+  },
+  {
+    "objectID": "ocurrencias.html#resultados",
+    "href": "ocurrencias.html#resultados",
+    "title": "Descarga de ocurrencias con RStudio desde iNaturalist y GBIF",
+    "section": "Resultados",
+    "text": "Resultados\nSe obtuvieron registros de ocurrencia de Craugastor fitzingeri procedentes de GBIF e iNaturalist. Los datos se organizaron en una base conjunta y se revisaron las coordenadas geográficas, las fechas, la precisión temporal, los registros con coordenadas oscurecidas, los registros repetidos y el resultado de las pruebas de CoordinateCleaner. Además, se seleccionaron las ocurrencias correspondientes a Costa Rica y se guardaron las bases depuradas.\nComo resultado del procesamiento se generó un mapa de las ocurrencias de la especie en Costa Rica, diferenciadas según la fuente de información (Figura 1). También se obtuvieron dos bases finales: una para análisis por cantón y otra para análisis espaciales.\nEl mapa permite visualizar la ubicación de las ocurrencias y constituye un recurso para explorar los patrones de distribución geográfica de la especie.\n\n\n\nFigura 1. Distribución de los registros de ocurrencia de Craugastor fitzingeri en Costa Rica según la fuente de información (GBIF e iNaturalist)."
+  },
+  {
+    "objectID": "ocurrencias.html#interpretación",
+    "href": "ocurrencias.html#interpretación",
+    "title": "template",
+    "section": "Interpretación",
+    "text": "Interpretación"
+  },
+  {
+    "objectID": "ocurrencias.html#conclusiones",
+    "href": "ocurrencias.html#conclusiones",
+    "title": "Descarga de ocurrencias con RStudio desde iNaturalist y GBIF",
+    "section": "Conclusiones",
+    "text": "Conclusiones\nAprendí a descargar registros de ocurrencia desde GBIF e iNaturalist utilizando R, integrar ambas fuentes y revisar la calidad de las coordenadas geográficas para preparar los datos para análisis espaciales.\nEsta herramienta puede utilizarse para estudiar la distribución geográfica de otras especies, identificar áreas con registros de biodiversidad y generar información útil para investigaciones ecológicas y proyectos de conservación."
+  },
+  {
+    "objectID": "ocurrencias.html#reeferencias",
+    "href": "ocurrencias.html#reeferencias",
+    "title": "template",
+    "section": "Reeferencias",
+    "text": "Reeferencias"
+  },
+  {
+    "objectID": "ocurrencias.html",
+    "href": "ocurrencias.html",
+    "title": "Descarga de ocurrencias con RStudio desde iNaturalist y GBIF",
+    "section": "",
+    "text": "Los registros de ocurrencia permiten conocer la distribución geográfica de las especies a partir de observaciones realizadas en diferentes lugares y fechas. Las plataformas GBIF e iNaturalist ofrecen información que puede utilizarse en estudios ecológicos y de biodiversidad. Sin embargo, estos registros deben revisarse y depurarse para identificar datos incompletos, coordenadas incorrectas y observaciones duplicadas. Por ello, la práctica permitió conocer el proceso de descarga, organización y limpieza de registros de ocurrencia de Craugastor fitzingeri para su posterior utilización en análisis espaciales."
+  },
+  {
+    "objectID": "ocurrencias.html#introducción",
+    "href": "ocurrencias.html#introducción",
+    "title": "Descarga de ocurrencias con RStudio desde iNaturalist y GBIF",
+    "section": "",
+    "text": "Los registros de ocurrencia permiten conocer la distribución geográfica de las especies a partir de observaciones realizadas en diferentes lugares y fechas. Las plataformas GBIF e iNaturalist ofrecen información que puede utilizarse en estudios ecológicos y de biodiversidad. Sin embargo, estos registros deben revisarse y depurarse para identificar datos incompletos, coordenadas incorrectas y observaciones duplicadas. Por ello, la práctica permitió conocer el proceso de descarga, organización y limpieza de registros de ocurrencia de Craugastor fitzingeri para su posterior utilización en análisis espaciales."
+  },
+  {
+    "objectID": "tablasvida .html",
+    "href": "tablasvida .html",
+    "title": "Generación de tablas de vida",
+    "section": "",
+    "text": "Las tablas de vida son herramientas utilizadas en la ecología de poblaciones para analizar la supervivencia y la mortalidad a diferentes edades. Permiten identificar patrones de supervivencia y compararlos con tres modelos teóricos: tipo I, caracterizado por una mortalidad elevada en edades avanzadas; tipo II, con una mortalidad relativamente constante durante la vida; y tipo III, con una mortalidad alta en las primeras etapas de vida.\nEn esta práctica se utilizaron registros de mortalidad humana obtenidos de lápidas de los cementerios de Heredia y San José. Estos datos permitieron construir tablas de vida, analizar la distribución de las edades de muerte y comparar los patrones de supervivencia entre ambas localidades."
+  },
+  {
+    "objectID": "tablasvida .html#introducción",
+    "href": "tablasvida .html#introducción",
+    "title": "Generación de tablas de vida",
+    "section": "",
+    "text": "Las tablas de vida son herramientas utilizadas en la ecología de poblaciones para analizar la supervivencia y la mortalidad a diferentes edades. Permiten identificar patrones de supervivencia y compararlos con tres modelos teóricos: tipo I, caracterizado por una mortalidad elevada en edades avanzadas; tipo II, con una mortalidad relativamente constante durante la vida; y tipo III, con una mortalidad alta en las primeras etapas de vida.\nEn esta práctica se utilizaron registros de mortalidad humana obtenidos de lápidas de los cementerios de Heredia y San José. Estos datos permitieron construir tablas de vida, analizar la distribución de las edades de muerte y comparar los patrones de supervivencia entre ambas localidades."
+  },
+  {
+    "objectID": "tablasvida .html#objetivo",
+    "href": "tablasvida .html#objetivo",
+    "title": "Generación de tablas de vida",
+    "section": "Objetivo",
+    "text": "Objetivo\nConstruir y analizar tablas de vida a partir de registros de mortalidad humana de los cementerios de Heredia y San José, con el propósito de caracterizar los patrones de supervivencia, compararlos con los modelos teóricos de curvas de supervivencia y evaluar las diferencias en las edades de muerte entre ambas localidades."
+  },
+  {
+    "objectID": "tablasvida .html#metodología",
+    "href": "tablasvida .html#metodología",
+    "title": "Generación de tablas de vida",
+    "section": "Metodología",
+    "text": "Metodología\nLa práctica se desarrolló utilizando el programa RStudio, con el lenguaje R y los paquetes tidyverse y gt para procesar los datos y elaborar tablas.\nPrimero, se importaron los registros de mortalidad de los cementerios de Heredia y San José mediante la función read_csv(). Los datos de ambas localidades se combinaron en una sola base, incorporando una variable que permitiera identificar el sitio de procedencia de cada registro.\nPosteriormente, se calculó la edad de muerte de cada persona mediante la diferencia entre el año de fallecimiento y el año de nacimiento. Se revisaron los registros para identificar edades negativas o superiores a 110 años, y se excluyeron temporalmente estos valores del análisis. Luego, las edades se agruparon en 21 intervalos, desde el primer año de vida hasta los 96 años o más.\nA continuación, se calcularon las frecuencias de mortalidad por intervalo de edad, localidad y sexo. Con esta información se construyeron las tablas de vida, calculando el número de individuos sobrevivientes al inicio de cada intervalo la proporción de sobrevivientes y la tasa de mortalidad específica por edad. También se elaboró un cuadro resumen con los principales indicadores de supervivencia y mortalidad para ambas localidades.\nFinalmente, los resultados se exportaron a archivos CSV y DOCX para facilitar su consulta y presentación. En el análisis posterior de la práctica, se utilizaron gráficos de curvas de supervivencia y pruebas estadísticas para comparar las localidades y los sexos."
+  },
+  {
+    "objectID": "tablasvida .html#resultados",
+    "href": "tablasvida .html#resultados",
+    "title": "Generación de tablas de vida",
+    "section": "Resultados",
+    "text": "Resultados\nSe analizaron inicialmente 1403 registros de mortalidad correspondientes al cementerio de Heredia y 1360 al Cementerio General de San José, para un total de 2763 registros antes de la revisión y exclusión de edades inválidas. En ambas localidades se registró una mayor cantidad de defunciones masculinas que femeninas.\nLa tabla de vida permitió observar que la mortalidad específica por edad se mantuvo relativamente baja durante la niñez y la adultez temprana, mientras que aumentó a partir de los 46–50 años, con un incremento más marcado en las edades avanzadas. Por su parte, la proporción de sobrevivientes disminuyó progresivamente hasta la mediana edad y descendió con mayor rapidez durante la vejez.\nLos resultados fueron similares entre las dos localidades. En el intervalo de 96 años o más, la proporción de sobrevivientes fue de 0,045 en Heredia y 0,042 en San José. Este comportamiento se asemeja al patrón teórico de supervivencia tipo I, en el cual la mayoría de los individuos sobrevive hasta edades avanzadas y la mortalidad aumenta durante la vejez.\n\n\n\nFigura 1. Comparación de las curvas de supervivencia teóricas de los tipos I, II y III con las curvas observadas en los cementerios de Heredia y San José.\n\n\nLas curvas de supervivencia de ambas localidades mostraron un patrón similar al tipo I, caracterizado por una supervivencia elevada durante gran parte de la vida y una disminución más pronunciada en edades avanzadas. En ambos cementerios, la proporción de sobrevivientes a los 61–65 años fue de aproximadamente 0,69, mientras que en el intervalo de 96 años o más disminuyó a 0,045 en Heredia y 0,042 en San José. Estos resultados indican que la supervivencia fue similar entre ambas localidades."
+  },
+  {
+    "objectID": "tablasvida .html#conclusiones",
+    "href": "tablasvida .html#conclusiones",
+    "title": "Generación de tablas de vida",
+    "section": "Conclusiones",
+    "text": "Conclusiones\nLa práctica permitió aprender a construir tablas de vida a partir de registros de mortalidad y comprender cómo los indicadores de supervivencia y mortalidad cambian entre los intervalos de edad. También permitió reconocer la utilidad de estas herramientas para identificar patrones demográficos y compararlos entre localidades.\nUna de las principales dificultades puede ser revisar los registros para detectar posibles errores en las edades y comprender el cálculo de los indicadores de la tabla de vida. Sin embargo, el uso de R facilita organizar grandes cantidades de datos y realizar los cálculos de manera sistemática.\nEste conocimiento puede aplicarse en estudios de ecología de poblaciones para analizar la supervivencia de anfibios, reptiles y otros organismos, comparar la mortalidad entre poblaciones y comprender cómo varía la supervivencia a lo largo del ciclo de vida."
   }
 ]
