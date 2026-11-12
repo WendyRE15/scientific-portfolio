@@ -26,6 +26,8 @@ En las 50 cuadrículas de 1 m² se registraron 368 individuos de *E. mollis* y 1
 
 Los conteos de *E. mollis* fueron compatibles con una distribución binomial negativa (χ² = 0.3, gl = 2, P = 0.871) y los de *R. nervosa* mostraron un ajuste adecuado a una distribución de Poisson (χ² = 2.8, gl = 2, P = 0.249). Estos ajustes concuerdan con la sobredispersión de la primera especie y con el patrón aleatorio de la segunda (Figura 1).
 
+![Figura 1. Frecuencias observadas y esperadas del número de individuos por cuadrícula de *Elephantopus mollis* (A) y *Rhynchospora nervosa* (B) en 50 cuadrículas de 1 m². Las barras representan el número de cuadrículas en las que se registró cada número de individuos. Los puntos y las líneas representan las frecuencias esperadas según una distribución binomial negativa (A) y una distribución de Poisson (B).](images/Imagen1.jpg)
+
 ## Conclusiones
 
 Aprendí a evaluar el patrón de distribución espacial de una población a partir de conteos en cuadrículas, usando el índice de dispersión junto con una prueba estadística, y a comprobar si los conteos se ajustan a distribuciones teóricas como la binomial negativa y la de Poisson.
