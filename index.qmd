@@ -17,7 +17,7 @@ Universidad Nacional, Costa Rica
 :::
 
 ::: hero-imagen
-![](images/banner.jpg){fig-alt="Imagen representativa de biodiversidad y trabajo científico"}
+![](images/DSC00740.jpg){fig-alt="Imagen representativa de biodiversidad y trabajo científico"}
 :::
 :::::
 
@@ -59,15 +59,12 @@ Registro de las prácticas, proyectos y productos desarrollados durante el semes
 
 Este portafolio fue desarrollado con herramientas de ciencia reproducible.
 
-::: {.logos-portada}
+::: logos-portada
+![](images/logo-una.png){width="150"}
 
-![](images/logo-una.png){width=150}
+![](images/logo-github.png){width="70"}
 
-![](images/logo-github.png){width=70}
-
-![](images/logo-quarto.png){width=70}
-
+![](images/logo-quarto.png){width="70"}
 :::
 
-
-**Última actualización:** 28 de Octubre 2026
+**Última actualización:** 11 de Noviembre 2026

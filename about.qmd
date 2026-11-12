@@ -54,7 +54,7 @@ Estudiante de biología tropical, herpetologa.
 
 ## Habilidades
 
-- R
+- RStudio
 - QGIS
 - Epicollect5
 
