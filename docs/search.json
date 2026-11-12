@@ -175,39 +175,130 @@
     "text": "Conclusiones\nAprendí a descargar registros de ocurrencia desde GBIF e iNaturalist utilizando R, integrar ambas fuentes y revisar la calidad de las coordenadas geográficas para preparar los datos para análisis espaciales.\nEsta herramienta puede utilizarse para estudiar la distribución geográfica de otras especies, identificar áreas con registros de biodiversidad y generar información útil para investigaciones ecológicas y proyectos de conservación."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Inicio",
+    "objectID": "mapeo.html",
+    "href": "mapeo.html",
+    "title": "Mapeo de áreas administrativas y zonas de vida",
     "section": "",
-    "text": "Escuela de Ciencias Biológicas\nUniversidad Nacional, Costa Rica\nVer mi perfil\nExplorar mi portafolio"
+    "text": "Los registros de ocurrencia adquieren mayor valor ecológico cuando se relacionan con unidades geográficas que permiten describir dónde se concentran las observaciones de una especie. Las divisiones administrativas (provincias y cantones) facilitan resumir y comunicar la distribución de los registros, mientras que las regiones biogeográficas de Savage permiten relacionarla con patrones ambientales y herpetofaunísticos del país. Esta práctica permitió integrar los registros depurados de Craugastor fitzingeri con capas espaciales de Costa Rica para cuantificar y visualizar su distribución geográfica, temporal y latitudinal."
   },
   {
-    "objectID": "index.html#estudiante-de-bachillerato-en-biología-tropical",
-    "href": "index.html#estudiante-de-bachillerato-en-biología-tropical",
-    "title": "Inicio",
+    "objectID": "mapeo.html#introducción",
+    "href": "mapeo.html#introducción",
+    "title": "Mapeo de áreas administrativas y zonas de vida",
     "section": "",
-    "text": "Escuela de Ciencias Biológicas\nUniversidad Nacional, Costa Rica\nVer mi perfil\nExplorar mi portafolio"
+    "text": "Los registros de ocurrencia adquieren mayor valor ecológico cuando se relacionan con unidades geográficas que permiten describir dónde se concentran las observaciones de una especie. Las divisiones administrativas (provincias y cantones) facilitan resumir y comunicar la distribución de los registros, mientras que las regiones biogeográficas de Savage permiten relacionarla con patrones ambientales y herpetofaunísticos del país. Esta práctica permitió integrar los registros depurados de Craugastor fitzingeri con capas espaciales de Costa Rica para cuantificar y visualizar su distribución geográfica, temporal y latitudinal."
   },
   {
-    "objectID": "index.html#bienvenidoa",
-    "href": "index.html#bienvenidoa",
-    "title": "Inicio",
-    "section": "Bienvenido(a)",
-    "text": "Bienvenido(a)\nEste sitio web constituye mi portafolio digital académico, donde documentaré las prácticas de laboratorio, proyectos, análisis y productos desarrollados durante el curso Ecología de Poblaciones y Comunidades.\nEste portafolio utiliza herramientas de ciencia reproducible como R, Quarto, Git y GitHub, permitiendo organizar y compartir mi trabajo de manera profesional."
+    "objectID": "mapeo.html#objetivo",
+    "href": "mapeo.html#objetivo",
+    "title": "Mapeo de áreas administrativas y zonas de vida",
+    "section": "Objetivo",
+    "text": "Objetivo\nAsignar los registros de ocurrencia de Craugastor fitzingeri a provincias, cantones y regiones de Savage mediante análisis espacial en R, y elaborar mapas y gráficos que describan su distribución geográfica y temporal."
   },
   {
-    "objectID": "index.html#contenido-del-sitio",
-    "href": "index.html#contenido-del-sitio",
-    "title": "Inicio",
-    "section": "Contenido del sitio",
-    "text": "Contenido del sitio\n\n\nPerfil\nInformación personal, intereses académicos y experiencia.\nIr al perfil →\n\n\nPortafolio\nRegistro de las prácticas, proyectos y productos desarrollados durante el semestre.\nVer el portafolio →\n\n\n\n\nLa ciencia solo adquiere valor cuando puede ser comunicada y reproducida."
+    "objectID": "mapeo.html#metodología",
+    "href": "mapeo.html#metodología",
+    "title": "Mapeo de áreas administrativas y zonas de vida",
+    "section": "Metodología",
+    "text": "Metodología\nLa práctica se realizó en RStudio con los paquetes sf, tmap, tidyverse y janitor. Se leyeron las capas de Costa Rica, cantones, provincias y regiones de Savage, se corrigieron sus geometrías, se transformaron a WGS84 (EPSG:4326) y se estandarizaron los nombres de sus columnas. Los registros depurados de la práctica anterior (occ_canton) se convirtieron en objeto espacial y, con st_join(), se asignó a cada uno su cantón, provincia y región de Savage. Los registros costeros que quedaron fuera de los polígonos de Savage se asignaron a la región más cercana con st_nearest_feature. Se contaron las observaciones por unidad y se elaboraron con tmap mapas coropléticos por provincia, cantón y región de Savage, con los registros superpuestos como puntos. Además, con ggplot2 se elaboraron gráficos de los cantones con más observaciones, la distribución temporal, la variación de los límites latitudinales y longitudinales por año, la densidad de observaciones por coordenadas y la primera observación por cantón. Todas las figuras se guardaron en JPG a 300 dpi."
   },
   {
-    "objectID": "index.html#herramientas-y-afiliación",
-    "href": "index.html#herramientas-y-afiliación",
-    "title": "Inicio",
-    "section": "Herramientas y afiliación",
-    "text": "Herramientas y afiliación\nEste portafolio fue desarrollado con herramientas de ciencia reproducible.\n\n\n\n\n\nÚltima actualización: 28 de Octubre 2026"
+    "objectID": "mapeo.html#resultados",
+    "href": "mapeo.html#resultados",
+    "title": "Mapeo de áreas administrativas y zonas de vida",
+    "section": "Resultados",
+    "text": "Resultados\nLos registros de Craugastor fitzingeri se asignaron a las regiones de Savage de Costa Rica y se contó el número de observaciones en cada una. El mapa muestra en qué regiones se concentran las observaciones de la especie y en cuáles no hay registros, que se indican como «No registrado». Esta representación permite relacionar la ubicación de los registros con las regiones biogeográficas del país y explorar los patrones de distribución geográfica de la especie.\n\n\n\nFigura 1. Número de observaciones de Craugastor fitzingeri por región de Savage en Costa Rica. Los puntos negros representan los registros."
+  },
+  {
+    "objectID": "mapeo.html#conclusiones",
+    "href": "mapeo.html#conclusiones",
+    "title": "Mapeo de áreas administrativas y zonas de vida",
+    "section": "Conclusiones",
+    "text": "Conclusiones\nAprendí a relacionar registros de ocurrencia con regiones biogeográficas mediante uniones espaciales (st_join()), a contar observaciones por región y a representarlas en un mapa coroplético con tmap.\nEsto puede aplicarse a otras especies para identificar regiones con vacíos de información, priorizar sitios de muestreo y apoyar estudios de conservación y de manejo de áreas protegidas."
+  },
+  {
+    "objectID": "indices.html",
+    "href": "indices.html",
+    "title": "Índices de diversidad alfa: riqueza, Shannon, Simpson y equidad de Pielou en tres sitios de estudio",
+    "section": "",
+    "text": "La diversidad alfa permite describir la diversidad de especies dentro de una unidad de muestreo y comparar las características de las comunidades biológicas entre diferentes sitios. Para ello, se utilizan índices que consideran distintos componentes de la diversidad, como la riqueza de especies, la diversidad de Shannon, la diversidad de Simpson y la equidad de Pielou. Estos índices permiten evaluar tanto la cantidad de especies presentes como la distribución de sus abundancias dentro de una comunidad. En esta práctica se analizaron los patrones de diversidad alfa de la comunidad vegetal en tres sitios de estudio, utilizando registros de abundancia por parcela para comparar la variación de estos índices entre sitios."
+  },
+  {
+    "objectID": "indices.html#introducción",
+    "href": "indices.html#introducción",
+    "title": "Índices de diversidad alfa: riqueza, Shannon, Simpson y equidad de Pielou en tres sitios de estudio",
+    "section": "",
+    "text": "La diversidad alfa permite describir la diversidad de especies dentro de una unidad de muestreo y comparar las características de las comunidades biológicas entre diferentes sitios. Para ello, se utilizan índices que consideran distintos componentes de la diversidad, como la riqueza de especies, la diversidad de Shannon, la diversidad de Simpson y la equidad de Pielou. Estos índices permiten evaluar tanto la cantidad de especies presentes como la distribución de sus abundancias dentro de una comunidad. En esta práctica se analizaron los patrones de diversidad alfa de la comunidad vegetal en tres sitios de estudio, utilizando registros de abundancia por parcela para comparar la variación de estos índices entre sitios."
+  },
+  {
+    "objectID": "indices.html#objetivo",
+    "href": "indices.html#objetivo",
+    "title": "Índices de diversidad alfa: riqueza, Shannon, Simpson y equidad de Pielou en tres sitios de estudio",
+    "section": "Objetivo",
+    "text": "Objetivo\nCalcular y comparar la diversidad alfa de la comunidad vegetal en tres sitios de estudio mediante los índices de riqueza de especies, Shannon, Simpson y equidad de Pielou, utilizando las abundancias registradas en las diferentes parcelas."
+  },
+  {
+    "objectID": "indices.html#metodología",
+    "href": "indices.html#metodología",
+    "title": "Índices de diversidad alfa: riqueza, Shannon, Simpson y equidad de Pielou en tres sitios de estudio",
+    "section": "Metodología",
+    "text": "Metodología\nLa práctica se realizó en RStudio mediante los paquetes sf, tmap, vegan, cowplot y tidyverse. Se importó la base de datos de registros de especies vegetales (ccb_dataset.rds), compuesta por 8374 registros, que contenía información sobre las parcelas, los sitios de muestreo, las especies y sus coordenadas geográficas. Se identificaron tres sitios de estudio y se transformaron las coordenadas geográficas en un objeto espacial mediante el paquete sf, utilizando el sistema de referencia WGS84 (EPSG:4326).\nPosteriormente, se calcularon las abundancias de cada especie por sitio y se construyeron matrices de comunidad a partir de las abundancias registradas. Para evaluar la diversidad alfa por parcela, se organizaron los registros según el sitio, la parcela y la especie, y se calcularon cuatro índices: riqueza de especies (S), diversidad de Shannon (H), diversidad de Simpson (1-D) y equidad de Pielou (J). La riqueza se obtuvo mediante specnumber(), mientras que los índices de Shannon y Simpson se calcularon mediante la función diversity() del paquete vegan. La equidad de Pielou se calculó dividiendo el índice de Shannon entre el logaritmo natural de la riqueza de especies.\nFinalmente, los valores de los cuatro índices se organizaron en formato largo y se representaron mediante diagramas de cajas (boxplots), acompañados de puntos que muestran los valores correspondientes a cada parcela. Los gráficos se agruparon en una sola figura mediante facet_wrap(), diferenciando los tres sitios con colores. La figura se exportó en formato JPG con una resolución de 300 dpi."
+  },
+  {
+    "objectID": "indices.html#resultados",
+    "href": "indices.html#resultados",
+    "title": "Índices de diversidad alfa: riqueza, Shannon, Simpson y equidad de Pielou en tres sitios de estudio",
+    "section": "Resultados",
+    "text": "Resultados\nSe analizaron 8374 registros de abundancia correspondientes a 31 especies vegetales distribuidas en tres sitios de estudio. El sitio 1 presentó 4196 registros y 28 especies, el sitio 2 registró 3956 registros y 27 especies, mientras que el sitio 3 presentó 222 registros y 12 especies.\nEn cuanto a la diversidad alfa, los resultados mostraron diferencias entre los sitios. A nivel de sitio, el índice de Shannon fue mayor en el sitio 1 (H = 2,85), seguido del sitio 2 (H = 2,69) y el sitio 3 (H = 2,35). La diversidad de Simpson también presentó su valor más alto en el sitio 1 (0,920), seguido del sitio 2 (0,902) y el sitio 3 (0,896). Por otra parte, la equidad de Pielou fue mayor en el sitio 3 (J = 0,946), mientras que los sitios 1 y 2 presentaron valores de 0,854 y 0,815, respectivamente.\nLa figura 1 muestra la variación de los cuatro índices de diversidad alfa entre las parcelas de los tres sitios. Se observa que los sitios 1 y 2 presentan valores de riqueza y diversidad de Shannon generalmente superiores a los del sitio 3. En cambio, el sitio 3 presenta valores más elevados de equidad de Pielou, lo que indica una distribución más uniforme de las abundancias relativas de las especies en comparación con los otros sitios.\n\n\n\nFigura 1. Comparación de los índices de diversidad alfa entre los tres sitios de estudio."
+  },
+  {
+    "objectID": "indices.html#conclusiones",
+    "href": "indices.html#conclusiones",
+    "title": "Índices de diversidad alfa: riqueza, Shannon, Simpson y equidad de Pielou en tres sitios de estudio",
+    "section": "Conclusiones",
+    "text": "Conclusiones\nLa práctica me permitió calcular e interpretar diferentes índices de diversidad alfa mediante el uso de RStudio y el paquete vegan. Además, aprendí a construir matrices de comunidad, calcular índices de diversidad y representar gráficamente sus variaciones entre parcelas y sitios de estudio."
+  },
+  {
+    "objectID": "distribucion.html",
+    "href": "distribucion.html",
+    "title": "Análisis de patrones de distribución espacial en poblaciones de plantas",
+    "section": "",
+    "text": "La distribución espacial de los individuos de una población describe cómo se organizan en el ambiente y puede ser aleatoria, uniforme o agrupada. Una forma de estudiarla es contar individuos en unidades de área del mismo tamaño y comparar la varianza de los conteos con su media, ya que una población distribuida al azar produce conteos compatibles con una distribución de Poisson, mientras que la agregación genera sobredispersión, que suele ajustarse a una binomial negativa. Esta práctica aplicó ese enfoque a dos especies de herbáceas en el Parque Recreativo de la Universidad para la Paz, Ciudad Colón, y permitió comparar sus patrones de distribución espacial."
+  },
+  {
+    "objectID": "distribucion.html#introducción",
+    "href": "distribucion.html#introducción",
+    "title": "Análisis de patrones de distribución espacial en poblaciones de plantas",
+    "section": "",
+    "text": "La distribución espacial de los individuos de una población describe cómo se organizan en el ambiente y puede ser aleatoria, uniforme o agrupada. Una forma de estudiarla es contar individuos en unidades de área del mismo tamaño y comparar la varianza de los conteos con su media, ya que una población distribuida al azar produce conteos compatibles con una distribución de Poisson, mientras que la agregación genera sobredispersión, que suele ajustarse a una binomial negativa. Esta práctica aplicó ese enfoque a dos especies de herbáceas en el Parque Recreativo de la Universidad para la Paz, Ciudad Colón, y permitió comparar sus patrones de distribución espacial."
+  },
+  {
+    "objectID": "distribucion.html#objetivo",
+    "href": "distribucion.html#objetivo",
+    "title": "Análisis de patrones de distribución espacial en poblaciones de plantas",
+    "section": "Objetivo",
+    "text": "Objetivo\nEvaluar y comparar el patrón de distribución espacial de Elephantopus mollis y Rhynchospora nervosa a partir de conteos en cuadrículas de 1 × 1 m, mediante el índice de dispersión, una prueba de dispersión y el ajuste de los conteos a distribuciones teóricas."
+  },
+  {
+    "objectID": "distribucion.html#metodología",
+    "href": "distribucion.html#metodología",
+    "title": "Análisis de patrones de distribución espacial en poblaciones de plantas",
+    "section": "Metodología",
+    "text": "Metodología\nEl trabajo de campo se realizó en un área de vegetación herbácea y arbolada de 100 × 100 m (1 ha) en el Parque Recreativo de la Universidad para la Paz. El área se dividió en 50 sectores de 10 × 20 m y en cada uno se estableció aleatoriamente una cuadrícula de 1 × 1 m, para un total de 50 unidades de muestreo. Se fijó un punto de referencia (0,0) y se registró la posición X e Y de cada cuadrícula, en metros. En cada una se contó el número de individuos de E. mollis y el número de macollas independientes de R. nervosa, sin contar los tallos de una misma macolla como individuos distintos. Dos grupos de cuatro estudiantes realizaron el muestreo y sus registros se integraron en una sola base de datos.\nEl análisis se realizó en RStudio con los paquetes tidyverse, MASS, cowplot y gt. Para cada especie se calcularon la abundancia media, la varianza y el índice de dispersión (varianza/media). La dispersión se evaluó con un estadístico chi-cuadrado, χ² = (n − 1) × ID, con 49 grados de libertad, cuya probabilidad se obtuvo de la cola superior de la distribución.\nLuego se ajustaron los conteos de E. mollis a una distribución binomial negativa, estimando sus parámetros (media y tamaño) con fitdistr(), y los de R. nervosa a una distribución de Poisson, con la media como parámetro. En ambos casos se compararon las frecuencias observadas y esperadas con una prueba de bondad de ajuste chi-cuadrado, agrupando las abundancias en clases para que las frecuencias esperadas fueran suficientemente grandes. Los grados de libertad se calcularon como el número de clases menos uno menos el número de parámetros estimados. Se usó un nivel de significancia de 0.05. Las frecuencias observadas y esperadas se representaron con ggplot2 y los paneles se combinaron con cowplot."
+  },
+  {
+    "objectID": "distribucion.html#resultados",
+    "href": "distribucion.html#resultados",
+    "title": "Análisis de patrones de distribución espacial en poblaciones de plantas",
+    "section": "Resultados",
+    "text": "Resultados\nEn las 50 cuadrículas de 1 m² se registraron 368 individuos de E. mollis y 115 de R. nervosa. E. mollis tuvo una media de 7.36 ind/m² y una varianza de 28.81 (índice de dispersión de 3.91), mientras que R. nervosa tuvo una media de 2.30 ind/m² y una varianza de 2.26 (índice de dispersión de 0.98). La variación entre cuadrículas de E. mollis fue significativamente mayor que la esperada bajo un patrón aleatorio (χ² = 191.8, gl = 49, P &lt; 0.001), lo que indica una distribución agrupada. En R. nervosa no difirió de la esperada por azar (χ² = 48.0, gl = 49, P = 0.512), por lo que su distribución fue compatible con un patrón aleatorio.\nLos conteos de E. mollis fueron compatibles con una distribución binomial negativa (χ² = 0.3, gl = 2, P = 0.871) y los de R. nervosa mostraron un ajuste adecuado a una distribución de Poisson (χ² = 2.8, gl = 2, P = 0.249). Estos ajustes concuerdan con la sobredispersión de la primera especie y con el patrón aleatorio de la segunda (Figura 1)."
+  },
+  {
+    "objectID": "distribucion.html#conclusiones",
+    "href": "distribucion.html#conclusiones",
+    "title": "Análisis de patrones de distribución espacial en poblaciones de plantas",
+    "section": "Conclusiones",
+    "text": "Conclusiones\nAprendí a evaluar el patrón de distribución espacial de una población a partir de conteos en cuadrículas, usando el índice de dispersión junto con una prueba estadística, y a comprobar si los conteos se ajustan a distribuciones teóricas como la binomial negativa y la de Poisson."
   },
   {
     "objectID": "about.html",
@@ -252,46 +343,123 @@
     "text": "Formación académica\nUniversidad Nacional (UNA)\nBachillerato en Biología\n2022 – Presente"
   },
   {
-    "objectID": "mapeo.html",
-    "href": "mapeo.html",
-    "title": "Mapeo de áreas administrativas y zonas de vida",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Inicio",
     "section": "",
-    "text": "Los registros de ocurrencia adquieren mayor valor ecológico cuando se relacionan con unidades geográficas que permiten describir dónde se concentran las observaciones de una especie. Las divisiones administrativas (provincias y cantones) facilitan resumir y comunicar la distribución de los registros, mientras que las regiones biogeográficas de Savage permiten relacionarla con patrones ambientales y herpetofaunísticos del país. Esta práctica permitió integrar los registros depurados de Craugastor fitzingeri con capas espaciales de Costa Rica para cuantificar y visualizar su distribución geográfica, temporal y latitudinal."
+    "text": "Escuela de Ciencias Biológicas\nUniversidad Nacional, Costa Rica\nVer mi perfil\nExplorar mi portafolio"
   },
   {
-    "objectID": "mapeo.html#introducción",
-    "href": "mapeo.html#introducción",
-    "title": "Mapeo de áreas administrativas y zonas de vida",
+    "objectID": "index.html#estudiante-de-bachillerato-en-biología-tropical",
+    "href": "index.html#estudiante-de-bachillerato-en-biología-tropical",
+    "title": "Inicio",
     "section": "",
-    "text": "Los registros de ocurrencia adquieren mayor valor ecológico cuando se relacionan con unidades geográficas que permiten describir dónde se concentran las observaciones de una especie. Las divisiones administrativas (provincias y cantones) facilitan resumir y comunicar la distribución de los registros, mientras que las regiones biogeográficas de Savage permiten relacionarla con patrones ambientales y herpetofaunísticos del país. Esta práctica permitió integrar los registros depurados de Craugastor fitzingeri con capas espaciales de Costa Rica para cuantificar y visualizar su distribución geográfica, temporal y latitudinal."
+    "text": "Escuela de Ciencias Biológicas\nUniversidad Nacional, Costa Rica\nVer mi perfil\nExplorar mi portafolio"
   },
   {
-    "objectID": "mapeo.html#objetivo",
-    "href": "mapeo.html#objetivo",
-    "title": "Mapeo de áreas administrativas y zonas de vida",
+    "objectID": "index.html#bienvenidoa",
+    "href": "index.html#bienvenidoa",
+    "title": "Inicio",
+    "section": "Bienvenido(a)",
+    "text": "Bienvenido(a)\nEste sitio web constituye mi portafolio digital académico, donde documentaré las prácticas de laboratorio, proyectos, análisis y productos desarrollados durante el curso Ecología de Poblaciones y Comunidades.\nEste portafolio utiliza herramientas de ciencia reproducible como R, Quarto, Git y GitHub, permitiendo organizar y compartir mi trabajo de manera profesional."
+  },
+  {
+    "objectID": "index.html#contenido-del-sitio",
+    "href": "index.html#contenido-del-sitio",
+    "title": "Inicio",
+    "section": "Contenido del sitio",
+    "text": "Contenido del sitio\n\n\nPerfil\nInformación personal, intereses académicos y experiencia.\nIr al perfil →\n\n\nPortafolio\nRegistro de las prácticas, proyectos y productos desarrollados durante el semestre.\nVer el portafolio →\n\n\n\n\nLa ciencia solo adquiere valor cuando puede ser comunicada y reproducida."
+  },
+  {
+    "objectID": "index.html#herramientas-y-afiliación",
+    "href": "index.html#herramientas-y-afiliación",
+    "title": "Inicio",
+    "section": "Herramientas y afiliación",
+    "text": "Herramientas y afiliación\nEste portafolio fue desarrollado con herramientas de ciencia reproducible.\n\n\n\n\n\nÚltima actualización: 28 de Octubre 2026"
+  },
+  {
+    "objectID": "kde.html",
+    "href": "kde.html",
+    "title": "Estimación de densidad espacial mediante Kernel Density Estimation (KDE)",
+    "section": "",
+    "text": "Los registros de ocurrencia suelen concentrarse en ciertos sitios, y la estimación de densidad kernel (KDE) permite resumir esa concentración en una superficie continua. Esta técnica es útil para identificar las zonas donde se agrupan las localidades registradas de una especie y para delimitar regiones de mayor concentración. Sin embargo, la densidad de registros no equivale a la abundancia de la especie ni a la idoneidad del hábitat, porque depende también del esfuerzo de muestreo. Esta práctica aplicó el KDE a los registros de Craugastor fitzingeri en Costa Rica."
+  },
+  {
+    "objectID": "kde.html#introducción",
+    "href": "kde.html#introducción",
+    "title": "Estimación de densidad espacial mediante Kernel Density Estimation (KDE)",
+    "section": "",
+    "text": "Los registros de ocurrencia suelen concentrarse en ciertos sitios, y la estimación de densidad kernel (KDE) permite resumir esa concentración en una superficie continua. Esta técnica es útil para identificar las zonas donde se agrupan las localidades registradas de una especie y para delimitar regiones de mayor concentración. Sin embargo, la densidad de registros no equivale a la abundancia de la especie ni a la idoneidad del hábitat, porque depende también del esfuerzo de muestreo. Esta práctica aplicó el KDE a los registros de Craugastor fitzingeri en Costa Rica."
+  },
+  {
+    "objectID": "kde.html#objetivo",
+    "href": "kde.html#objetivo",
+    "title": "Estimación de densidad espacial mediante Kernel Density Estimation (KDE)",
     "section": "Objetivo",
-    "text": "Objetivo\nAsignar los registros de ocurrencia de Craugastor fitzingeri a provincias, cantones y regiones de Savage mediante análisis espacial en R, y elaborar mapas y gráficos que describan su distribución geográfica y temporal."
+    "text": "Objetivo\nEstimar la densidad kernel de las localidades de registro de Craugastor fitzingeri en Costa Rica, representarla en un mapa y delimitar las regiones que concentran el 50 % y el 95 % de la densidad."
   },
   {
-    "objectID": "mapeo.html#metodología",
-    "href": "mapeo.html#metodología",
-    "title": "Mapeo de áreas administrativas y zonas de vida",
+    "objectID": "kde.html#metodología",
+    "href": "kde.html#metodología",
+    "title": "Estimación de densidad espacial mediante Kernel Density Estimation (KDE)",
     "section": "Metodología",
-    "text": "Metodología\nLa práctica se realizó en RStudio con los paquetes sf, tmap, tidyverse y janitor. Se leyeron las capas de Costa Rica, cantones, provincias y regiones de Savage, se corrigieron sus geometrías, se transformaron a WGS84 (EPSG:4326) y se estandarizaron los nombres de sus columnas. Los registros depurados de la práctica anterior (occ_canton) se convirtieron en objeto espacial y, con st_join(), se asignó a cada uno su cantón, provincia y región de Savage. Los registros costeros que quedaron fuera de los polígonos de Savage se asignaron a la región más cercana con st_nearest_feature. Se contaron las observaciones por unidad y se elaboraron con tmap mapas coropléticos por provincia, cantón y región de Savage, con los registros superpuestos como puntos. Además, con ggplot2 se elaboraron gráficos de los cantones con más observaciones, la distribución temporal, la variación de los límites latitudinales y longitudinales por año, la densidad de observaciones por coordenadas y la primera observación por cantón. Todas las figuras se guardaron en JPG a 300 dpi."
+    "text": "Metodología\nLa práctica se realizó en RStudio con los paquetes terra, sf, tmap, tidyverse y spatstat (spatstat.geom y spatstat.explore). Se leyeron la capa de Costa Rica y la base de registros depurados, sin coordenadas oscurecidas. Se conservó una observación por localidad (coordenadas únicas), para que las coordenadas repetidas no aportaran más peso a la densidad, y se seleccionaron las localidades que intersectan Costa Rica.\nLas capas y los registros se transformaron al sistema de coordenadas proyectadas CR05 / CRTM05 (EPSG:5367), porque el KDE requiere distancias en metros. Se definió una ventana rectangular de cálculo con un margen alrededor del país, se creó el objeto de puntos con ppp() y se estimó la densidad con density() usando un núcleo gaussiano con ancho de banda (sigma) de 5 000 m, celdas de 500 m y sin corrección de borde.\nLa superficie resultante se convirtió en un ráster, se recortó y enmascaró con el contorno de Costa Rica, se corrigieron los valores negativos por aproximación numérica y se expresó en localidades por km². Con las celdas ordenadas de mayor a menor densidad se calculó la proporción acumulada de la densidad total y se identificó el umbral correspondiente al 50 % y al 95 %. Con esos umbrales se generaron los polígonos de cada nivel. Los mapas se elaboraron con tmap y se guardaron en JPG a 300 dpi. El ráster y los polígonos se guardaron en formatos GeoTIFF, GeoPackage y RDS."
   },
   {
-    "objectID": "mapeo.html#resultados",
-    "href": "mapeo.html#resultados",
-    "title": "Mapeo de áreas administrativas y zonas de vida",
+    "objectID": "kde.html#resultados",
+    "href": "kde.html#resultados",
+    "title": "Estimación de densidad espacial mediante Kernel Density Estimation (KDE)",
     "section": "Resultados",
-    "text": "Resultados\nLos registros de Craugastor fitzingeri se asignaron a las regiones de Savage de Costa Rica y se contó el número de observaciones en cada una. El mapa muestra en qué regiones se concentran las observaciones de la especie y en cuáles no hay registros, que se indican como «No registrado». Esta representación permite relacionar la ubicación de los registros con las regiones biogeográficas del país y explorar los patrones de distribución geográfica de la especie.\n\n\n\nFigura 1. Número de observaciones de Craugastor fitzingeri por región de Savage en Costa Rica. Los puntos negros representan los registros."
+    "text": "Resultados\nSe estimó la densidad kernel de las localidades de registro de Craugastor fitzingeri en Costa Rica, usando un núcleo gaussiano con ancho de banda de 5 000 m y celdas de 500 m. El análisis se hizo con una observación por localidad, para que las coordenadas repetidas no aportaran más peso a la superficie. El resultado es una superficie continua que se expresó en localidades por km² y se recortó al territorio nacional.\nEn el mapa, los valores altos de densidad corresponden a las zonas donde se agrupan las localidades registradas, y los valores bajos o nulos, a las zonas con pocos registros o sin ellos. Esta superficie permite identificar las áreas de mayor concentración de registros y distinguirlas de las que no han sido muestreadas. Sin embargo, la densidad no representa la abundancia de la especie ni la idoneidad del hábitat, porque depende también del esfuerzo de muestreo. Una zona sin registros tampoco demuestra que la especie esté ausente.\n\n\n\nFigura 1. Densidad kernel (localidades/km²) de los registros de Craugastor fitzingeri en Costa Rica (sigma = 5 000 m). Los puntos negros representan las localidades de registro."
   },
   {
-    "objectID": "mapeo.html#conclusiones",
-    "href": "mapeo.html#conclusiones",
-    "title": "Mapeo de áreas administrativas y zonas de vida",
+    "objectID": "kde.html#conclusiones",
+    "href": "kde.html#conclusiones",
+    "title": "Estimación de densidad espacial mediante Kernel Density Estimation (KDE)",
     "section": "Conclusiones",
-    "text": "Conclusiones\nAprendí a relacionar registros de ocurrencia con regiones biogeográficas mediante uniones espaciales (st_join()), a contar observaciones por región y a representarlas en un mapa coroplético con tmap.\nEsto puede aplicarse a otras especies para identificar regiones con vacíos de información, priorizar sitios de muestreo y apoyar estudios de conservación y de manejo de áreas protegidas."
+    "text": "Conclusiones\nAprendí a estimar la densidad kernel de registros de ocurrencia con spatstat, a convertir el resultado en un ráster y a delimitar regiones de concentración al 50 % y 95 % de la densidad. También aprendí que el resultado depende del ancho de banda elegido y que el sesgo de muestreo puede influir en la superficie, por lo que sus zonas de alta densidad deben interpretarse como concentración de registros y no como abundancia.\nEsta herramienta puede aplicarse a otras especies para identificar zonas de concentración de registros, detectar áreas poco muestreadas y priorizar sitios de muestreo en estudios de conservación."
+  },
+  {
+    "objectID": "nicho.html",
+    "href": "nicho.html",
+    "title": "Análisis del nicho bidimensional y su variación temporal",
+    "section": "",
+    "text": "El nicho ambiental de una especie puede describirse comparando las condiciones donde se registró con las condiciones disponibles en el área de estudio. El nicho bidimensional hace esta comparación para pares de variables, como temperatura y precipitación, y permite ver qué parte del espacio ambiental ocupa la especie. Además, comparar los registros antiguos con los recientes permite explorar si la especie dejó de registrarse en ciertas condiciones, lo cual es útil para evaluar posibles declives. Esta práctica integró los registros de Craugastor fitzingeri con variables ambientales para caracterizar su nicho y comparar su ocupación a lo largo del tiempo."
+  },
+  {
+    "objectID": "nicho.html#introducción",
+    "href": "nicho.html#introducción",
+    "title": "Análisis del nicho bidimensional y su variación temporal",
+    "section": "",
+    "text": "El nicho ambiental de una especie puede describirse comparando las condiciones donde se registró con las condiciones disponibles en el área de estudio. El nicho bidimensional hace esta comparación para pares de variables, como temperatura y precipitación, y permite ver qué parte del espacio ambiental ocupa la especie. Además, comparar los registros antiguos con los recientes permite explorar si la especie dejó de registrarse en ciertas condiciones, lo cual es útil para evaluar posibles declives. Esta práctica integró los registros de Craugastor fitzingeri con variables ambientales para caracterizar su nicho y comparar su ocupación a lo largo del tiempo."
+  },
+  {
+    "objectID": "nicho.html#objetivo",
+    "href": "nicho.html#objetivo",
+    "title": "Análisis del nicho bidimensional y su variación temporal",
+    "section": "Objetivo",
+    "text": "Objetivo\nExtraer variables ambientales (temperatura, precipitación, elevación e índice de huella humana) en los sitios de registro de Craugastor fitzingeri, representar su nicho bidimensional frente al ambiente disponible en Costa Rica, y comparar los registros anteriores y posteriores al año 2000."
+  },
+  {
+    "objectID": "nicho.html#metodología",
+    "href": "nicho.html#metodología",
+    "title": "Análisis del nicho bidimensional y su variación temporal",
+    "section": "Metodología",
+    "text": "Metodología\nLa práctica se realizó en RStudio con los paquetes terra, sf, tmap y tidyverse. Se leyeron las capas de Costa Rica y de Santa Elena y la base de registros depurados, que se convirtió en objeto espacial. Se cargaron los rásteres de elevación, índice de huella humana (HFI) y WorldClim, de los cuales se usaron la temperatura media anual (BIO_01) y la precipitación media anual (BIO_12). Se revisaron el sistema de coordenadas, la resolución y la extensión de los rásteres con compareGeom(). Como tenían la misma resolución y cuadrícula pero distinta extensión, la elevación se recortó con crop(). El HFI se remuestreó con resample() (método bilineal) para igualarlo a la cuadrícula de WorldClim. Los cuatro rásteres se combinaron en una sola pila. El ambiente disponible (background) se obtuvo convirtiendo todas las celdas de la pila en una tabla. Los valores ambientales de los registros se extrajeron con terra::extract() y se unieron a la tabla de ocurrencias, revisando los valores faltantes. Con ggplot2 se graficaron los registros contra el background para los pares temperatura–precipitación, elevación–HFI y temperatura–elevación. En la segunda parte, los registros se clasificaron según su fecha (antes y desde el año 2000) y se repitieron los gráficos diferenciando ambos grupos. También se elaboraron con tmap mapas de elevación y de HFI con los registros superpuestos y los límites de Costa Rica y de Santa Elena. Todas las figuras se guardaron en JPG a 300 dpi."
+  },
+  {
+    "objectID": "nicho.html#resultados",
+    "href": "nicho.html#resultados",
+    "title": "Análisis del nicho bidimensional y su variación temporal",
+    "section": "Resultados",
+    "text": "Resultados\nLos valores ambientales extraídos en los sitios de registro se compararon con el ambiente disponible en Costa Rica. El gráfico muestra qué rangos de temperatura media anual y precipitación media anual ocupa Craugastor fitzingeri dentro del espacio ambiental del país, representado por todas las celdas del área de estudio. Esta representación permite identificar qué parte de las condiciones climáticas disponibles en el país es ocupada por la especie y qué combinaciones de temperatura y precipitación no presentan registros.\n\n\n\nFigura 1. Nicho bidimensional de Craugastor fitzingeri: temperatura media anual y precipitación media anual en los registros de la especie (rojo) y en el ambiente disponible en Costa Rica (gris)."
+  },
+  {
+    "objectID": "nicho.html#conclusiones",
+    "href": "nicho.html#conclusiones",
+    "title": "Análisis del nicho bidimensional y su variación temporal",
+    "section": "Conclusiones",
+    "text": "Conclusiones\nAprendí a combinar registros de ocurrencia con variables ambientales mediante rásteres, a extraer los valores ambientales en cada registro con terra::extract() y a representar el nicho bidimensional de una especie frente al ambiente disponible."
   },
   {
     "objectID": "portfolio.html",
@@ -305,7 +473,7 @@
     "href": "portfolio.html#prácticas-de-laboratorio",
     "title": "Portafolio académico",
     "section": "Prácticas de laboratorio",
-    "text": "Prácticas de laboratorio\n\n📚 Gestión de referencias bibliográficas con Zotero\nEn esta práctica se documentará la creación de una biblioteca bibliográfica utilizando Zotero y su integración con Microsoft Word.\nVer práctica →\n\n\n📚 Manejo de datos con Tidyverse\nEn esta práctica se documentará la importacion y el manejo de datos con el paquete Tidyverse en RStudio.\nVer práctica →\n\n\n📚 Descarga de ocurrencias con RStudio desde iNaturalist y GBIF\nEn esta práctica se descargará y limpiara un dataset de ocurrencias de la especie Craugastor fitzingeri con los paquetes de rgbif y rinat.\nVer práctica →\n\n\n📚 Generación de tablas de vida\nEn esta prácticase utilizaron registros de mortalidad humana obtenidos de lápidas de los cementerios de Heredia y San José. Estos datos permitieron construir tablas de vida con paquetes tidyverse y gt para procesar los datos y elaborar tablas.\nVer práctica →\n\n\n📚 Mapeo de áreas administrativas y zonas de vida\nEn esta práctica se utilizaron registros de ocurrencia de Craugastor fitzingeri para realizar análisis espaciales en RStudio, mediante los paquetes sf, tmap, tidyverse y janitor, y elaborar mapas y gráficos que describieran su distribución geográfica y temporal en Costa Rica.\nVer práctica →"
+    "text": "Prácticas de laboratorio\n\n📚 Gestión de referencias bibliográficas con Zotero\nEn esta práctica se documentará la creación de una biblioteca bibliográfica utilizando Zotero y su integración con Microsoft Word.\nVer práctica →\n\n\n📚 Manejo de datos con Tidyverse\nEn esta práctica se documentará la importacion y el manejo de datos con el paquete Tidyverse en RStudio.\nVer práctica →\n\n\n📚 Descarga de ocurrencias con RStudio desde iNaturalist y GBIF\nEn esta práctica se descargará y limpiara un dataset de ocurrencias de la especie Craugastor fitzingeri con los paquetes de rgbif y rinat.\nVer práctica →\n\n\n📚 Generación de tablas de vida\nEn esta prácticase utilizaron registros de mortalidad humana obtenidos de lápidas de los cementerios de Heredia y San José. Estos datos permitieron construir tablas de vida con paquetes tidyverse y gt para procesar los datos y elaborar tablas.\nVer práctica →\n\n\n📚 Mapeo de áreas administrativas y zonas de vida\nEn esta práctica se utilizaron registros de ocurrencia de Craugastor fitzingeri para realizar análisis espaciales en RStudio, mediante los paquetes sf, tmap, tidyverse y janitor, y elaborar mapas y gráficos que describieran su distribución geográfica y temporal en Costa Rica.\nVer práctica →\n\n\n📚 Análisis del nicho bidimensional y su variación temporal\nEn esta práctica se integraron registros de ocurrencia con variables ambientales para representar el nicho bidimensional frente al ambiente disponible en Costa Rica. Además, se compararon los registros anteriores y posteriores al año 2000 para explorar cambios en la ocupación ambiental de la especie.\nVer práctica →\n\n\n📚 Estimación de densidad espacial mediante Kernel Density Estimation (KDE)\nEn esta práctica se estimó la densidad espacial de los registros de ocurrencia mediante KDE, generando una superficie continua para identificar las zonas de mayor concentración. Además, se delimitaron las áreas que representan el 50 % y el 95 % de la densidad total de registros.\nVer práctica →\n\n\n📚 Análisis de patrones de distribución espacial en poblaciones de plantas\nEn esta práctica se evaluó y comparó la distribución espacial de dos especies de herbáceas mediante conteos en cuadrículas de 1 × 1 m. Se utilizaron índices de dispersión, pruebas estadísticas y ajustes a distribuciones de Poisson y binomial negativa para identificar patrones aleatorios y agrupados.\nVer práctica →\n\n\n📚 Índices de diversidad alfa: riqueza, Shannon, Simpson y equidad de Pielou en tres sitios de estudio.\nEn esta práctica se evaluó la diversidad alfa de comunidades vegetales en tres sitios mediante los índices de riqueza de especies, Shannon, Simpson y equidad de Pielou. Los resultados permitieron comparar la diversidad y la distribución de las abundancias entre parcelas, identificando variaciones en la composición de las comunidades.\nVer práctica →"
   },
   {
     "objectID": "portfolio.html#objetivo-del-portafolio",

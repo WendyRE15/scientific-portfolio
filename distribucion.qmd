@@ -1,0 +1,31 @@
+---
+title: "Análisis de patrones de distribución espacial en poblaciones de plantas"
+author: "Wendy Fonseca Quirós"
+editor: visual
+---
+
+## Introducción
+
+La distribución espacial de los individuos de una población describe cómo se organizan en el ambiente y puede ser aleatoria, uniforme o agrupada. Una forma de estudiarla es contar individuos en unidades de área del mismo tamaño y comparar la varianza de los conteos con su media, ya que una población distribuida al azar produce conteos compatibles con una distribución de Poisson, mientras que la agregación genera sobredispersión, que suele ajustarse a una binomial negativa. Esta práctica aplicó ese enfoque a dos especies de herbáceas en el Parque Recreativo de la Universidad para la Paz, Ciudad Colón, y permitió comparar sus patrones de distribución espacial.
+
+## Objetivo
+
+Evaluar y comparar el patrón de distribución espacial de *Elephantopus mollis* y *Rhynchospora nervosa* a partir de conteos en cuadrículas de 1 × 1 m, mediante el índice de dispersión, una prueba de dispersión y el ajuste de los conteos a distribuciones teóricas.
+
+## Metodología
+
+El trabajo de campo se realizó en un área de vegetación herbácea y arbolada de 100 × 100 m (1 ha) en el Parque Recreativo de la Universidad para la Paz. El área se dividió en 50 sectores de 10 × 20 m y en cada uno se estableció aleatoriamente una cuadrícula de 1 × 1 m, para un total de 50 unidades de muestreo. Se fijó un punto de referencia (0,0) y se registró la posición X e Y de cada cuadrícula, en metros. En cada una se contó el número de individuos de *E. mollis* y el número de macollas independientes de *R. nervosa*, sin contar los tallos de una misma macolla como individuos distintos. Dos grupos de cuatro estudiantes realizaron el muestreo y sus registros se integraron en una sola base de datos.
+
+El análisis se realizó en RStudio con los paquetes tidyverse, MASS, cowplot y gt. Para cada especie se calcularon la abundancia media, la varianza y el índice de dispersión (varianza/media). La dispersión se evaluó con un estadístico chi-cuadrado, χ² = (n − 1) × ID, con 49 grados de libertad, cuya probabilidad se obtuvo de la cola superior de la distribución.
+
+Luego se ajustaron los conteos de *E. mollis* a una distribución binomial negativa, estimando sus parámetros (media y tamaño) con fitdistr(), y los de *R. nervosa* a una distribución de Poisson, con la media como parámetro. En ambos casos se compararon las frecuencias observadas y esperadas con una prueba de bondad de ajuste chi-cuadrado, agrupando las abundancias en clases para que las frecuencias esperadas fueran suficientemente grandes. Los grados de libertad se calcularon como el número de clases menos uno menos el número de parámetros estimados. Se usó un nivel de significancia de 0.05. Las frecuencias observadas y esperadas se representaron con ggplot2 y los paneles se combinaron con cowplot.
+
+## Resultados
+
+En las 50 cuadrículas de 1 m² se registraron 368 individuos de *E. mollis* y 115 de *R. nervosa*. *E. mollis* tuvo una media de 7.36 ind/m² y una varianza de 28.81 (índice de dispersión de 3.91), mientras que *R. nervosa* tuvo una media de 2.30 ind/m² y una varianza de 2.26 (índice de dispersión de 0.98). La variación entre cuadrículas de *E. mollis* fue significativamente mayor que la esperada bajo un patrón aleatorio (χ² = 191.8, gl = 49, P \< 0.001), lo que indica una distribución agrupada. En *R. nervosa* no difirió de la esperada por azar (χ² = 48.0, gl = 49, P = 0.512), por lo que su distribución fue compatible con un patrón aleatorio.
+
+Los conteos de *E. mollis* fueron compatibles con una distribución binomial negativa (χ² = 0.3, gl = 2, P = 0.871) y los de *R. nervosa* mostraron un ajuste adecuado a una distribución de Poisson (χ² = 2.8, gl = 2, P = 0.249). Estos ajustes concuerdan con la sobredispersión de la primera especie y con el patrón aleatorio de la segunda (Figura 1).
+
+## Conclusiones
+
+Aprendí a evaluar el patrón de distribución espacial de una población a partir de conteos en cuadrículas, usando el índice de dispersión junto con una prueba estadística, y a comprobar si los conteos se ajustan a distribuciones teóricas como la binomial negativa y la de Poisson.

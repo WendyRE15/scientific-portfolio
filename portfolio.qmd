@@ -52,6 +52,38 @@ En esta práctica se utilizaron registros de ocurrencia de *Craugastor fitzinger
 [Ver práctica →](mapeo.qmd)
 :::
 
+::: portfolio-item
+### 📚 Análisis del nicho bidimensional y su variación temporal
+
+En esta práctica se integraron registros de ocurrencia con variables ambientales para representar el nicho bidimensional frente al ambiente disponible en Costa Rica. Además, se compararon los registros anteriores y posteriores al año 2000 para explorar cambios en la ocupación ambiental de la especie.
+
+[Ver práctica →](nicho.qmd)
+:::
+
+::: portfolio-item
+### 📚 Estimación de densidad espacial mediante Kernel Density Estimation (KDE)
+
+En esta práctica se estimó la densidad espacial de los registros de ocurrencia mediante KDE, generando una superficie continua para identificar las zonas de mayor concentración. Además, se delimitaron las áreas que representan el 50 % y el 95 % de la densidad total de registros.
+
+[Ver práctica →](kde.qmd)
+:::
+
+::: portfolio-item
+### 📚 Análisis de patrones de distribución espacial en poblaciones de plantas
+
+En esta práctica se evaluó y comparó la distribución espacial de dos especies de herbáceas mediante conteos en cuadrículas de 1 × 1 m. Se utilizaron índices de dispersión, pruebas estadísticas y ajustes a distribuciones de Poisson y binomial negativa para identificar patrones aleatorios y agrupados.
+
+[Ver práctica →](distribucion.qmd)
+:::
+
+::: portfolio-item
+### 📚 Índices de diversidad alfa: riqueza, Shannon, Simpson y equidad de Pielou en tres sitios de estudio.
+
+En esta práctica se evaluó la diversidad alfa de comunidades vegetales en tres sitios mediante los índices de riqueza de especies, Shannon, Simpson y equidad de Pielou. Los resultados permitieron comparar la diversidad y la distribución de las abundancias entre parcelas, identificando variaciones en la composición de las comunidades.
+
+[Ver práctica →](indices.qmd)
+:::
+
 ------------------------------------------------------------------------
 
 ## Objetivo del portafolio
